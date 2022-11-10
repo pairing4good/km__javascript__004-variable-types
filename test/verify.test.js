@@ -38,22 +38,30 @@ afterEach(async () => {
 });
 
 describe('the index.js file', () => {
-  it('should define a variable named courseLength', async () => {
-    const courseLength = await page.evaluate(() => courseLength);
-    expect(courseLength).toBeDefined();
+  it('should define a string variable named animalName', async () => {
+    const animalName = await page.evaluate(() => animalName);
+    expect(typeof animalName).toBe('string');
   });
   
-  it('should assign courseLength to the number 20', async () => {
-    const courseLength = await page.evaluate(() => courseLength);
-    expect(courseLength).toBe(20);
+  
+  it('should define a numeric variable named height', async () => {
+    const height = await page.evaluate(() => height);
+    expect(typeof height).toBe('number');
   });
   
-  it('should assign the innerHTML of the HTML element with the id result to the courseLength', async () => {
+  
+  it('should define a boolean variable named isIndoorPet', async () => {
+    const isIndoorPet = await page.evaluate(() => isIndoorPet);
+    expect(typeof isIndoorPet).toBe('boolean');
+  });
+  
+  
+  it('should assign the innerHTML of the HTML element with the id result to the animalName', async () => {
+    const animalName = await page.evaluate(() => animalName);
     const innerHtml = await page.$eval('#result', (result) => {
-      return result.innerHTML;
+      return result.innerHTML.trim();
     });
     
-    expect(innerHtml).toBe('20')
+    expect(innerHtml).toBe(animalName);
   });
 });
-

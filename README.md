@@ -1,11 +1,12 @@
-# 003 Variables
+# 004 Variable Types
 
-[![003 Variables](https://img.youtube.com/vi/QJAPMxld0_E/0.jpg)](https://www.youtube.com/watch?v=QJAPMxld0_E)
+[![004 Variable Types](https://img.youtube.com/vi/a7rjSr7mZEA/0.jpg)](https://www.youtube.com/watch?v=a7rjSr7mZEA)
 
 the index.js file
-- should define a variable named courseLength
-- should assign courseLength to the number 20
-- should assign the innerHTML of the HTML element with the id result to the courseLength
+- should define a string variable named animalName
+- should define a numeric variable named height
+- should define a boolean variable named isIndoorPet
+- should assign the innerHTML of the HTML element with the id result to the animalName
 
 resources:
 - https://www.w3schools.com/js/js_let.asp
